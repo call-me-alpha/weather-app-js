@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 40px auto;
+    color: #fff;
+    background: linear-gradient(145deg, #2193b0, #6dd5ed);
+    width: 400px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 0 16px 8px #ccc;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 24px;
+    border-bottom: 1px solid white;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 4px;
+    background-color: transparent;
+    height: 24px;
+    color: white;
+}
+
+.microphone {
+    position: absolute;
+    cursor: pointer;
+    right: 4px;
+}
+
+.microphone .recording-icon {
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color: #e22d2d;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite linear;
+}
+
+.microphone.recording .recording-icon {
+    display: inline-block;
+}
+
+.microphone.recording .fa-microphone {
+    display: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 3px 0 rgba(173, 0, 0, .3);
+    }
+    50% {
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, .5);
+    }
+    100% {
+        box-shadow: 0 0 3px 5px rgba(173, 0, 0, 0);
+    }
+}
+
+.search-input::placeholder {
+    color: #c8c8c8;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 38vh;
+    margin: 80px 0;
+}
+
+.city-name {
+    font-size: 24px;
+}
+
+.weather-state {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+
+.temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+}
+
+.additional-section {
+    border-top: 1px solid white;
+    padding: 24px;
+    font-size: 14px;
+}
+
+.additional-section .row {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.additional-section .col {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    align-items: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="./asset/favicon/cloudy-day.png">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <label for="search-input" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" class="search-input" id="search-input" placeholder="Tìm kiếm thành phố...">
+                <div class="microphone">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span class="recording-icon"></span>
+                </div>
+            </div>
+            <div class="info-wrapper">
+                <p class="city-name">--</p>
+                <p class="weather-state">--</p>
+                <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="Weather Icon" class="weather-icon">
+                <p class="temperature">--</p>
+            </div>
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="col">
+                    <div>MT Mọc</div>
+                    <div class="sunrise">--</div>
+                </div>
+                <div class="col">
+                    <div>MT Lặn</div>
+                    <div class="sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>Độ Ẩm</div>
+                    <div><span class="humidity">-- </span> %</div>
+                </div>
+                <div class="col">
+                    <div>Gió</div>
+                    <div><span class="wind-speed">-- </span>km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
